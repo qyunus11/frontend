@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.diyabet.demo.controller.PatientDashboardController"
+      spacing="15" alignment="CENTER" prefWidth="520" prefHeight="420">
+    <children>
+        <Label fx:id="welcomeLabel" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+        <Label fx:id="infoLabel"/>
+        <Button text="Ölçüm Ekle" onAction="#handleOlcumEkle" maxWidth="Infinity"/>
+        <Button text="Diyet ve Egzersizleri Gör" onAction="#handleDiyetEgzersiz" maxWidth="Infinity"/>
+        <Button text="Bildirimleri Gör" onAction="#handleBildirimiGor" maxWidth="Infinity"/>
+        <Label text="Son Ölçümleriniz:" style="-fx-font-weight:bold;"/>
+        <ListView fx:id="olcumListView" prefHeight="150" prefWidth="400"/>
+    </children>
+</VBox>

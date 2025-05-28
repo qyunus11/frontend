@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.diyabet.demo.controller.HastaDetayController"
+      alignment="CENTER" spacing="10" prefWidth="320" prefHeight="380">
+    <children>
+        <Label text="Hasta Detayları" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+        <Label fx:id="nameLabel"/>
+        <Label fx:id="emailLabel"/>
+        <Label fx:id="tcLabel"/>
+        <Label fx:id="genderLabel"/>
+        <Label fx:id="birthLabel"/>
+        <Label fx:id="regLabel"/>
+        <Button text="Kapat" onAction="#handleKapat"/>
+    </children>
+</VBox>

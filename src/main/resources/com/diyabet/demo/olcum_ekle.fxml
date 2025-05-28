@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.diyabet.demo.controller.OlcumEkleController"
+      alignment="CENTER" spacing="10" prefWidth="300" prefHeight="300">
+    <children>
+        <Label text="Ölçüm Ekle" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+        <ComboBox fx:id="typeBox">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="sabah"/>
+                    <String fx:value="ogle"/>
+                    <String fx:value="ikindi"/>
+                    <String fx:value="aksam"/>
+                    <String fx:value="gece"/>
+                </FXCollections>
+            </items>
+        </ComboBox>
+        <TextField fx:id="valueField" promptText="Değer"/>
+        <DatePicker fx:id="datePicker"/>
+        <Button text="Kaydet" onAction="#handleKaydet"/>
+        <Label fx:id="statusLabel" textFill="red"/>
+    </children>
+</VBox>

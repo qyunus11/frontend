@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.diyabet.demo.controller.DoctorDashboardController"
+      spacing="20" alignment="CENTER" prefWidth="600" prefHeight="400">
+    <children>
+        <Label fx:id="welcomeLabel" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+        <Label fx:id="infoLabel"/>
+        <Label text="Hastalar:" style="-fx-font-weight:bold;"/>
+        <Button text="Hasta Ekle" onAction="#handleHastaEkle" maxWidth="Infinity"/>
+        <ListView fx:id="patientListView" prefHeight="200" prefWidth="400"/>
+    </children>
+</VBox>
