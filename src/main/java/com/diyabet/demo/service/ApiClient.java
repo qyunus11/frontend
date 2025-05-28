@@ -1,9 +1,5 @@
 package com.diyabet.demo.service;
 
-import com.diyabet.demo.model.LoginResponse;
-import com.diyabet.demo.model.Measurement;
-import com.diyabet.demo.model.Patient;
-import com.diyabet.demo.model.User;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
